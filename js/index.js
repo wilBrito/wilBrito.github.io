@@ -6,20 +6,35 @@
 // Auxiliar
 function myFunction() {
     let burger = document.getElementsByClassName('burger')[0];
+    let color = document.body.style.backgroundColor;
 
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
       x.className += " responsive";
-      burger.src = "assets/icon/cross.svg";
-      burger.style.width = "25px";
-      burger.style.height = "25px";
+
+      if(color == "white")
+        burger.src = "assets/icon/cross.svg";
+
+      else if(color == "rgb(1, 4, 36)")
+        burger.src = "assets/icon/crossWhite.svg";
+
+      else
+        burger.src = "assets/icon/cross.svg";  
+      
+
     } else {
       x.className = "topnav";
-      burger.src = "assets/icon/bars.svg";
-      burger.style.width = "20px";
-      burger.style.height = "20px";
+
+      if(color == "white")
+        burger.src = "assets/icon/bars.svg";
+    
+      else if(color == "rgb(1, 4, 36)")
+        burger.src = "assets/icon/barsWhite.svg";
+        
+      else
+        burger.src = "assets/icon/bars.svg";     
     }
-  } 
+} 
 
 function navResponsiveFix(){
   let dad = document.getElementById("eleDadAux");
@@ -40,29 +55,56 @@ function darkLightStyle(){
 
     if(color == "white"){
       sunMoon.src = "assets/icon/sun.svg";
-      document.body.style.backgroundColor = "black";
+      document.body.style.backgroundColor = "#010424";
       document.body.style.color = "white";
       burger.src = "assets/icon/barsWhite.svg";
       for(let i = 0; i<auxLightDark.length;i++){
           auxLightDark[i].style.color = "white";
+          auxLightDark[i].parentNode.style.backgroundColor = "#010424";
+
+          auxLightDark[i].parentNode.addEventListener("mouseover", function(){hoverDarkLight1(auxLightDark[i].parentNode)});
+
+          auxLightDark[i].parentNode.addEventListener("mouseout", function(){hoverDarkLight2(auxLightDark[i].parentNode)});
       }
     }
-    else if(color == "#191523"){
+    else if(color == "rgb(1, 4, 36)"){
       sunMoon.src = "assets/icon/moon.svg";
       document.body.style.backgroundColor = "white"; 
-      document.body.style.color = "#191523";
+      document.body.style.color = "#010424";
       burger.src = "assets/icon/bars.svg";
       for(let i = 0; i<auxLightDark.length;i++){
-        auxLightDark[i].style.color = "#191523";
+        auxLightDark[i].style.color = "#010424";
+        auxLightDark[i].parentNode.style.backgroundColor = "";
       }
     }
     else{
       sunMoon.src = "assets/icon/sun.svg";
-      document.body.style.backgroundColor = "#191523";
+      document.body.style.backgroundColor = "#010424";
       document.body.style.color = "white"; 
       burger.src = "assets/icon/barsWhite.svg";
       for(let i = 0; i<auxLightDark.length;i++){
         auxLightDark[i].style.color = "white";
+        auxLightDark[i].parentNode.style.backgroundColor = "#010424";
+
+        auxLightDark[i].parentNode.addEventListener("mouseover", function(){hoverDarkLight1(auxLightDark[i].parentNode)});
+
+        auxLightDark[i].parentNode.addEventListener("mouseout", function(){hoverDarkLight2(auxLightDark[i].parentNode)});
       }
     }
+}
+
+function hoverDarkLight1(element){
+  let color = document.body.style.color;
+  if(color == "rgb(1, 4, 36)")
+    element.style.backgroundColor = "";
+  else
+    element.style.backgroundColor = "#030848";
+}
+
+function hoverDarkLight2(element){
+  let color = document.body.style.color;
+  if(color == "rgb(1, 4, 36)")
+    element.style.backgroundColor = "";
+  else
+    element.style.backgroundColor = "#010424";
 }

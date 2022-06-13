@@ -70,11 +70,14 @@ nav li a{
         text-align: center;
         min-width: 100%;
         padding: .5rem 0 .5rem 0;
+        cursor: pointer;
         background-color: whitesmoke;
     } 
 
     .topnav.responsive li:not(.liBtnAux):hover { 
         background-color: rgb(231, 231, 231);
     }  
+
+    
   }
 
