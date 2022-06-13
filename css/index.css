@@ -11,7 +11,9 @@ header{
     display: grid;
     grid-template-columns:  minmax(auto,40%) minmax(60%, auto);
 }
-
+header p{
+    margin-top: 1.4rem;
+}
 
 nav li{
     display: inline-block; 
@@ -19,7 +21,7 @@ nav li{
 }
 
 nav li a{
-    text-decoration: none; 
+    text-decoration: none;
     color: black;
 }
 
@@ -53,7 +55,6 @@ nav li a{
 
 /* Responsive */
 @media screen and (max-width: 1010px) {
-
     .topnav li {display: none;}
     .topnav .liBtnAux{
       float: right;
@@ -61,25 +62,19 @@ nav li a{
     }
 
     .topnav.responsive li:not(.liBtnAux) {
-        /* float: none; */
-        display: block;
-        /* text-align: left; */
+        display: block;     
         position: absolute;
-        top: 2.5rem;
-        left: .1rem;
+        top: 3.5rem;
+        left: 0;
+        margin: 0;
         text-align: center;
-      } 
+        min-width: 100%;
+        padding: .5rem 0 .5rem 0;
+        background-color: whitesmoke;
+    } 
 
-    .topnav.responsive .liBurger {
-        position: relative;
-        
-    }
-
-     
+    .topnav.responsive li:not(.liBtnAux):hover { 
+        background-color: rgb(231, 231, 231);
+    }  
   }
 
-  /* @media screen and (max-width: 660px) {
-    header{
-        grid-template-columns:  minmax(auto,40%) minmax(auto, 60%);
-    }
-  } */
