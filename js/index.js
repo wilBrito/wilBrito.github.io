@@ -1,9 +1,5 @@
 
-
-
-
-
-// Auxiliar
+// Funciones Responsive
 function myFunction() {
     let burger = document.getElementsByClassName('burger')[0];
     let color = document.body.style.backgroundColor;
@@ -47,6 +43,8 @@ function navResponsiveFix(){
   }
 }
 
+
+// Funciones Modo Light/Dark
 function darkLightStyle(){
     let sunMoon = document.getElementsByClassName('sunMoon')[0];
     let auxLightDark = document.getElementsByClassName('auxLightDark');
