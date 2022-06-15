@@ -112,6 +112,73 @@ nav li a{
     cursor: pointer;
 }
 
+/* Descripción */
+.gridDescripcion{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.containerDescripcion h1{
+    text-align: center;
+    margin: 0 0 3rem 0;
+}
+
+.flexDescripcionImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexDescripcionImg img{
+    border-radius: 5px;
+    padding: 2rem 0 2rem 0;
+}
+
+.gridTimeDescrip{
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    margin: 2rem 0 2rem 0;
+    font-size: 25px;
+}
+
+.flexTimeDescrip{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexTimeDescrip span{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.flexTimeDescrip p{
+    font-size: 13px;
+    margin: 0 1.2rem 0 1.2rem;
+    text-align: center;
+}
+
+.gridBtnDescrip{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    text-align: center;
+}
+
+.btnDescripcionCVCP{
+    width: 110px;
+    padding: 12px 0 12px 0;
+    background-color: #5e8ed5; 
+    color: white;
+    border: 0;
+    border-radius: 5px; 
+    cursor: pointer;
+}
+
+.btnDescripcionCVCP:hover{
+    background-color: #406193; 
+}
+
 
 
 
@@ -174,8 +241,14 @@ nav li a{
     
     .itemPresentacionResponsive{
         margin: 3rem auto;
+        grid-row-start: 1;
     }
-    
+}
+
+@media screen and (max-width: 800px) {
+    .gridDescripcion{
+        grid-template-columns: 100%;
+    }
 }
 
 @media screen and (max-width: 460px) {
