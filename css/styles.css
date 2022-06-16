@@ -6,6 +6,16 @@ body{
     margin: 0 12% 0 12%;
 }
 
+
+
+/* Clases comunes */
+.containerDescripcion h1,
+.containerHabilidades h1{
+    text-align: center;
+    margin: 0 0 3rem 0;
+    font-size: 30px;
+}
+
 /* Header-Nav */
 header{
     display: grid;
@@ -179,7 +189,82 @@ nav li a{
     background-color: #406193; 
 }
 
+.itemPresentacionResponsive{
+    display: flex;
+    justify-content: center;
+}
 
+
+
+
+
+
+
+/* Habilidades */
+.gridHabilidades{
+    min-width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.gridItemDesplegableHabi{
+    display: grid;
+    grid-template-columns: 10% 70% 20%;
+    cursor: pointer;
+}
+
+.flexHabilidadesSelect ul{
+    list-style: none;
+    padding: 0;
+	margin: 0;
+}
+
+
+.principalUlHabi{
+    display: flex;
+    flex-direction: column;
+}
+
+.flexHabilidadesSelect ul li{
+    width: 100%;
+}
+
+
+
+.gridItemDesplegableHabi div h3{
+    margin: 0;
+}
+
+.gridItemDesplegableHabi div p{
+    margin-top: .3rem;
+}
+
+.icoHab{
+    padding: .5rem 0 0 0;
+}
+
+.gridHabiBarra{
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+    margin: 1rem 3.5rem 0 2.5rem;
+}
+
+.flexHabiBarraSpan{
+    display: flex;
+    justify-content: right;
+}
+
+.barraHa{
+    margin: .5rem 3.5rem 0 2.5rem;
+    height: 7px;
+    border-radius: 5px;
+}
+
+
+.infoHabi{
+    display: none;
+}
 
 
 
@@ -250,6 +335,10 @@ nav li a{
         grid-template-columns: 100%;
     }
 }
+
+@media screen and (max-width: 750px) {
+}
+
 
 @media screen and (max-width: 460px) {
     body{

@@ -106,3 +106,17 @@ function hoverDarkLight2(element){
   else
     element.style.backgroundColor = "#010424";
 }
+
+// Funciones de Barra-Habilidades
+function abrirInfoBarra(i){
+    let dis = document.getElementsByClassName('infoHabi')[i].style.display;
+
+    if(dis == "block"){
+      document.getElementsByClassName('infoHabi')[i].style.display = "none";
+      document.getElementsByClassName('icoArrow')[i].src = "assets/icon/arrow-down.svg";
+    }
+    else{
+      document.getElementsByClassName('infoHabi')[i].style.display = "block";
+      document.getElementsByClassName('icoArrow')[i].src = "assets/icon/arrow-up.svg";
+    }
+}
