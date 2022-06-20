@@ -10,11 +10,25 @@ body{
 
 /* Clases comunes */
 .containerDescripcion h1,
-.containerHabilidades h1{
+.containerHabilidades h1,
+.containerExperiencia h1{
     text-align: center;
     margin: 0 0 3rem 0;
     font-size: 30px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Header-Nav */
 header{
@@ -121,6 +135,12 @@ nav li a{
     margin: 0 1rem 0 1rem;
     cursor: pointer;
 }
+
+
+
+
+
+
 
 /* Descripción */
 .gridDescripcion{
@@ -268,6 +288,98 @@ nav li a{
 }
 
 
+
+
+
+/* Experiencia */
+.gridExpeEduWork{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 2rem;  
+}
+
+.gridExpeEduWork a{
+     cursor: pointer;
+     color: #5e8ed5;
+     font-weight: bold;
+     font-size: 25px;
+}
+
+.flexExpeEduca{
+    display: flex;
+    justify-content: right;
+}
+
+.ajusteIcoEx{
+    padding: 0 .2rem 0 0;
+}
+
+.linea-tiempo {
+    position: relative;
+    /* width: 500px; */
+    /* max-width: 95vw; */
+    height: 100%;
+    margin: 3rem 0 0 0;
+
+  }
+
+  .momento {
+    position: relative;
+    width: 45%;
+    box-sizing: border-box;
+  }
+
+  .momento:nth-child(even) {
+    left: 55%;
+  }
+
+  .momento:nth-child(odd) {
+    text-align: right;
+  }
+
+  .linea-tiempo::before {
+    content: '';
+    position: absolute;
+    width: 3px;
+    background-color: #5e8ed5;
+    left: 50%;
+    height: 100%;
+    border-radius: 10px;
+  }
+  .momento::after {
+    content: '';
+    position: absolute;
+    top: calc(50% + 10px);
+    right: calc(-11.11% - 11.5px);
+    height: 20px;
+    width: 20px;
+    background-color: #5e8ed5;
+    border-radius: 50%;
+  }
+  .momento:nth-child(even)::after {
+    left: calc(-11.11% - 8.5px);
+  }
+
+.momento h3{
+    margin: 0;
+    font-size: 20px;
+}
+
+.momento p{
+    margin: .3rem 0 0 0;
+}
+
+.momento span{
+    font-size: 15px;
+}
+
+.momento span img{
+    margin: 0 .3rem 0 0;
+}
+
+.expWork{
+    display: none;
+}
 
 
 

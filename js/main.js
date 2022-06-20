@@ -120,3 +120,26 @@ function abrirInfoBarra(i){
       document.getElementsByClassName('icoArrow')[i].src = "assets/icon/arrow-up.svg";
     }
 }
+
+
+// Funciones Experiencia
+function cambiarWorkEduca(i){
+  let work = document.getElementsByClassName('expWork');
+  let educ = document.getElementsByClassName('expEdu');
+
+  if(i == 0){
+    for(let i = 0 ; i<work.length; i++){
+      work[i].style.display = 'none';
+    }
+    for(let i = 0 ; i<educ.length; i++){
+      educ[i].style.display = 'block';
+    }
+  }else{
+    for(let i = 0 ; i<work.length; i++){
+      work[i].style.display = 'block';
+    }
+    for(let i = 0 ; i<educ.length; i++){
+      educ[i].style.display = 'none';
+    }
+  }
+}
