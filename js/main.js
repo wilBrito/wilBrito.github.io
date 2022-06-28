@@ -1,4 +1,8 @@
 
+// Variables Generales
+ var contCarrussell = 0;
+
+
 // Funciones Responsive
 function myFunction() {
     let burger = document.getElementsByClassName('burger')[0];
@@ -140,6 +144,70 @@ function cambiarWorkEduca(i){
     }
     for(let i = 0 ; i<educ.length; i++){
       educ[i].style.display = 'none';
+    }
+  }
+}
+
+
+// Funciones Carrusell Proyectos
+function arrowCarruLeft(){
+    contCarrussell -= 1;
+    if(contCarrussell < 0){
+      contCarrussell = 2;
+    }
+
+    let listPro = document.getElementsByClassName('gridProyectos2');
+    let listCir = document.getElementsByClassName('circuCarruPro');
+
+    for(let i = 0; i<listPro.length;i++){
+        if(i == contCarrussell){
+          listPro[i].style.display = "";
+          listCir[i].style.backgroundColor = "#5e8ed5";
+        }
+        else{
+          listPro[i].style.display = "none";
+          listCir[i].style.backgroundColor = "";
+        }
+    }
+
+
+}
+
+function arrowCarruRight(){
+    contCarrussell += 1;
+
+    if(contCarrussell >= 3){
+      contCarrussell = 0;
+    }
+
+    let listPro = document.getElementsByClassName('gridProyectos2');
+    let listCir = document.getElementsByClassName('circuCarruPro');
+
+    for(let i = 0; i<listPro.length;i++){
+      if(i == contCarrussell){
+        listPro[i].style.display = "";
+        listCir[i].style.backgroundColor = "#5e8ed5";
+      }
+      else{
+        listPro[i].style.display = "none";
+        listCir[i].style.backgroundColor = "";
+      }
+    }
+}
+
+function btnCircuPro(w){
+  contCarrussell = w;
+  let listPro = document.getElementsByClassName('gridProyectos2');
+  let listCir = document.getElementsByClassName('circuCarruPro');
+
+  for(let i = 0; i<listPro.length;i++){
+    if(i == contCarrussell){
+      listPro[i].style.display = "";
+      listCir[i].style.backgroundColor = "#5e8ed5";
+    }
+    else{
+      listPro[i].style.display = "none";
+      listCir[i].style.backgroundColor = "";
     }
   }
 }
