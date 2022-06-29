@@ -461,6 +461,37 @@ nav li a{
 
 
 
+/* Conctactar */
+.containerConctactar h1{
+    text-align: center;
+    margin: 0 0 3rem 0;
+    font-size: 30px;
+}
+
+.gridFormCon{
+    display: grid;
+    grid-template-columns: 25% 75%;
+    gap: 50px;
+}
+
+.gridIconTexCon{
+    display: grid;
+    grid-template-columns: 25% 75%;
+    margin: 0 0 2rem 0;
+}
+
+.gridIconTexCon h2{
+    margin: .5rem 0 .5rem 0;
+}
+
+.flexTflCon{
+    display: flex;
+    align-items: center;
+}
+
+
+
+
 
 
 
