@@ -490,7 +490,91 @@ nav li a{
 }
 
 
+::placeholder {
+    color: transparent;
+  }
 
+.gridFormCont{
+    display: grid;
+    grid-template-columns: 47% 47%;
+    gap: 6%;
+}
+
+.inputContainer input{
+    border-radius: 10px;
+    width: 100%;
+    padding: 25px 0 25px 0;
+    border: 1px solid black;
+}
+
+.ajusFormTa{
+    padding: 50px 0 50px 0 !important;
+}
+
+.inputContainer label {
+    position: relative;
+    bottom: 2.8rem;
+    left: 1rem;
+    color: #aecaf3;
+    background-color: white;
+    padding: .1rem;
+    font-size: 20px;
+    transition: 0.5s;
+    z-index: 0;
+  }
+
+.ajusFormPosi{
+    bottom: 4.6rem !important;
+}
+
+input:focus{
+    border: 1px solid #5e8ed5;
+}
+
+input:focus + label {
+    bottom: 80px;
+    right: 3px;
+    z-index: 10;
+    font-size: 14px;
+    font-weight: 600;
+    color: #5e8ed5;
+  }
+
+  input:not(:placeholder-shown)+ label {
+    bottom: 80px;
+    right: 3px;
+    z-index: 10;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+
+  .ajusFormTa:focus + .ajusFormPosi {
+    bottom: 128px !important;
+  }
+
+  .ajusFormTa:not(:placeholder-shown)+ .ajusFormPosi {
+    bottom: 128px !important;
+  }
+
+.btnContac{
+    width: 200px;
+    padding: 20px 0 20px 0; 
+    background-color: #5e8ed5; 
+    color: white;
+    border: 0;
+    border-radius: 5px; 
+    cursor: pointer;
+}
+
+.btnContac:hover{ 
+    background-color: #406193; 
+}
+
+.btnContac img{
+    position: relative;
+    top: .13rem;
+}
 
 
 
@@ -596,12 +680,25 @@ nav li a{
     .gridHabilidades{
         grid-template-columns: 100%;
     }
+
+    .gridFormCon{
+        grid-template-columns: 100%;
+    }
+
+    .ajusteResForm{
+        width: 35%;
+        margin: 0 auto;
+    }
 }
 
 
 @media screen and (max-width: 460px) {
     body{
         margin: 0 8% 0 8%;
+    }
+
+    .ajusteResForm{
+        width: 50%;
     }
 }
 
