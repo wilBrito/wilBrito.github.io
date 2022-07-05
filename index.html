@@ -13,424 +13,428 @@
 
     </head>
     <body>
-        <header>
-            <div>
-                <p>Wilson</p>
-            </div>
-
-            <div>
-                <nav class="topnav" id="myTopnav">
-                    <ul id="eleDadAux">
-                        <li><a class="auxLightDark" href="#">Inicio</a></li>
-                        <li><a class="auxLightDark" href="#">Sobre mi</a></li>
-                        <li><a class="auxLightDark" href="#">Habilidades</a></li>
-                        <li><a class="auxLightDark" href="#">Experiencia</a></li>
-                        <li><a class="auxLightDark" href="#">Proyectos</a></li>
-                        <li><a class="auxLightDark" href="#">Contactame</a></li>
-                        <li class="liBtnAux liMonSun"><img class="posiNavMoonSun sunMoon" src="assets/icon/moon.svg" height="20px" width="20px" onclick="darkLightStyle()"></li>
-                        <li class="liBtnAux liBurger"><img class="posiNavMoonSun burger" src="assets/icon/bars.svg" height="20px" width="20px" onclick="myFunction(); navResponsiveFix()"></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-
-        <!-- Presentación -->
-        <section class="containerPresentacion sectDim">
-            <div>
-                <div class="flexPresentacionTxt">
-                    <h1 class="marginAjus">Hola, Soy Wilson</h1>
-                    <h3 class="marginAjus">Desarrollador Web</h3>
-                    <p class="marginAjus">Recién graduado en Desarrollo de Aplicaciones Web, con exelentes actitudes en el área de la programación</p>
-                    <button class="btnPresentacionConct">
-                        Contactar
-                        <img src="assets/icon/navigator.svg" alt="icono-navigator" width="15px" height="15px">
-                    </button>
-                    <div class="iconosLinkGit">
-                        <a href="http://www.linkedin.com/in/wilson-brito"><img src="assets/icon/linkedinBlue.svg" alt="icono-linkedin" width="20px" height="20px"></a>
-                        <a href="http://www.github.com/wilBrito"><img src="assets/icon/githubBlue.svg" alt="icono-linkedin" width="20px" height="20px"></a>
-                    </div>
-                </div>
-            </div>
-            <div class="itemPresentacionResponsive">
-                <div class="flexPresentacionImg oval">
-                    <img src="assets/img/perfil-bob.webp" width="200px" height="200px">
-                </div>
-            </div>
-        </section>
-
-        <!-- Descripción -->
-        <section class="containerDescripcion sectDim">
-            <h1>Sobre Mi</h1>
-            <div class="gridDescripcion">
+        
+        <article>
+            <header>
                 <div>
-                    <div class="flexDescripcionImg">
-                        <img src="assets/img/perfil-bob.webp" width="280px" height="200px">
-                    </div>
+                    <p>Wilson</p>
                 </div>
+    
                 <div>
-                    <div>
-                        <p>
-                            Desarrollador Web, recién graduado con experiencia en la realización
-                            de aplicaciones web principalmente en Java con Spring y con la ayuda de HTML, CSS y JavaScript empleando Mysql como bbdd Mysql.
-                        </p>
-                        <div class="gridTimeDescrip">
-                            <div class="flexTimeDescrip">
-                                <span>1+</span>
-                                <p>Años de experiencia</p>
-                            </div>
-                            <div class="flexTimeDescrip">
-                                <span>5+</span>
-                                <p>Proyectos Completados</p>
-                            </div>
-                            <div class="flexTimeDescrip">
-                                <span>1</span>
-                                <p>Experiencia en Empresa</p>
-                            </div>
-                        </div>
-                        <div class="gridBtnDescrip">
-                            <a href="assets/pdf/Brito Yari, Wilson-Cv.pdf" download=""><button class="btnDescripcionCVCP">
-                                Descargar CV
-                                <img src="assets/icon/download.svg" alt="icono-download" width="15px" height="15px">
-                            </button></a>
-                            <a href="assets/pdf/Brito Yari, Wilson-CartaP.pdf" download=""><button class="btnDescripcionCVCP">
-                                Descargar CP
-                                <img src="assets/icon/download.svg" alt="icono-download" width="15px" height="15px">
-                            </button></a>
-                        </div>
-                    </div>
+                    <nav class="topnav" id="myTopnav">
+                        <ul id="eleDadAux">
+                            <li><a class="auxLightDark" href="#">Inicio</a></li>
+                            <li><a class="auxLightDark" href="#">Sobre mi</a></li>
+                            <li><a class="auxLightDark" href="#">Habilidades</a></li>
+                            <li><a class="auxLightDark" href="#">Experiencia</a></li>
+                            <li><a class="auxLightDark" href="#">Proyectos</a></li>
+                            <li><a class="auxLightDark" href="#">Contactame</a></li>
+                            <li class="liBtnAux liMonSun"><img class="posiNavMoonSun sunMoon" src="assets/icon/moon.svg" height="20px" width="20px" onclick="darkLightStyle()"></li>
+                            <li class="liBtnAux liBurger"><img class="posiNavMoonSun burger" src="assets/icon/bars.svg" height="20px" width="20px" onclick="myFunction(); navResponsiveFix()"></li>
+                        </ul>
+                    </nav>
                 </div>
-            </div>
-        </section>
-
-        <!-- Habilidades -->
-        <section class="containerHabilidades sectDim">
-            <h1>Habilidades</h1>
-            <div class="gridHabilidades">
-                <div class="flexHabilidadesSelect">
-                    <ul class="principalUlHabi">
-                        <li>
-                            <div class="gridItemDesplegableHabi" onclick="abrirInfoBarra(0)">
-                                <img class="icoHab" src="assets/icon/database.svg" alt="icono-database" width="30px" height="30px">
-                                <div>
-                                    <h3>Desarrollador BackEnd</h3>
-                                    <p>Más de 2 años</p>
-                                </div>
-                                <img class="icoHab icoArrow" src="assets/icon/arrow-down.svg" alt="icono-arrow-down/up" width="30px" height="30px">
-                            </div>
-                            
-                            <ul class="infoHabi">
-                                <li >
-                                    <div class="gridHabiBarra">
-                                        <span>Java</span>
-                                        <span class="flexHabiBarraSpan">85%</span>
-                                    </div>
-                                    <div class="barraHa" style="background: linear-gradient(to right, #5e8ed5 0% , #5e8ed5 85% , #a4bbde 85%, #a4bbde 100%);"></div>
-                                </li>
-
-                                <li >
-                                    <div class="gridHabiBarra">
-                                        <span>Framework Spring Boot</span>
-                                        <span class="flexHabiBarraSpan">70%</span>
-                                    </div>
-                                    <div class="barraHa" style="background: linear-gradient(to right, #5e8ed5 0% , #5e8ed5 70% , #a4bbde 70%, #a4bbde 100%);"></div>
-                                </li>   
-                                
-                                <li >
-                                    <div class="gridHabiBarra">
-                                        <span>MySql</span>
-                                        <span class="flexHabiBarraSpan">80%</span>
-                                    </div>
-                                    <div class="barraHa" style="background: linear-gradient(to right, #5e8ed5 0% , #5e8ed5 80% , #a4bbde 80%, #a4bbde 100%);"></div>
-                                </li>
-
-                                <li >
-                                    <div class="gridHabiBarra">
-                                        <span>PHP</span>
-                                        <span class="flexHabiBarraSpan">20%</span>
-                                    </div>
-                                    <div class="barraHa" style="background: linear-gradient(to right, #5e8ed5 0% , #5e8ed5 20% , #a4bbde 20%, #a4bbde 100%);"></div>
-                                </li>
-                            </ul>
-                            
-                        </li>
-                    </ul>
-                </div>
-                <div class="flexHabilidadesSelect">
-                    <ul class="principalUlHabi">
-                        <li>
-                            <div class="gridItemDesplegableHabi" onclick="abrirInfoBarra(1)">
-                                <img class="icoHab" src="assets/icon/brackets.svg" alt="icono-brackets" width="30px" height="30px">
-                                <div>
-                                    <h3>Desarrollador FrontEnd</h3>
-                                    <p>Más de 2 años</p>
-                                </div>
-                                <img class="icoHab icoArrow" src="assets/icon/arrow-down.svg" alt="icono-arrow-down/up" width="30px" height="30px">
-                            </div>
-                            
-                            <ul class="infoHabi">
-                                <li >
-                                    <div class="gridHabiBarra">
-                                        <span>HTML</span>
-                                        <span class="flexHabiBarraSpan">85%</span>
-                                    </div>
-                                    <div class="barraHa" style="background: linear-gradient(to right, #5e8ed5 0% , #5e8ed5 85% , #a4bbde 85%, #a4bbde 100%);"></div>
-                                </li>
-
-                                <li >
-                                    <div class="gridHabiBarra">
-                                        <span>CSS</span>
-                                        <span class="flexHabiBarraSpan">65%</span>
-                                    </div>
-                                    <div class="barraHa" style="background: linear-gradient(to right, #5e8ed5 0% , #5e8ed5 65% , #a4bbde 65%, #a4bbde 100%);"></div>
-                                </li>      
-                                
-                                <li >
-                                    <div class="gridHabiBarra">
-                                        <span>JavaScript</span>
-                                        <span class="flexHabiBarraSpan">75%</span>
-                                    </div>
-                                    <div class="barraHa" style="background: linear-gradient(to right, #5e8ed5 0% , #5e8ed5 75% , #a4bbde 75%, #a4bbde 100%);"></div>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <div class="flexHabilidadesSelect">
-                    <ul class="principalUlHabi">
-                        <li>
-                            <div class="gridItemDesplegableHabi" onclick="abrirInfoBarra(2)">
-                                <img class="icoHab" src="assets/icon/code-branch.svg" alt="icono-brackets" width="30px" height="30px">
-                                <div>
-                                    <h3>Control de Versiones</h3>
-                                    <p>Menos de 1 Año</p>
-                                </div>
-                                <img class="icoHab icoArrow" src="assets/icon/arrow-down.svg" alt="icono-arrow-down/up" width="30px" height="30px">
-                            </div>
-                            
-                            <ul class="infoHabi">
-                                <li >
-                                    <div class="gridHabiBarra">
-                                        <span>GitHub</span>
-                                        <span class="flexHabiBarraSpan">60%</span>
-                                    </div>
-                                    <div class="barraHa" style="background: linear-gradient(to right, #5e8ed5 0% , #5e8ed5 60% , #a4bbde 60%, #a4bbde 100%);"></div>
-                                </li> 
-
-                                <li >
-                                    <div class="gridHabiBarra">
-                                        <span>Git</span>
-                                        <span class="flexHabiBarraSpan">50%</span>
-                                    </div>
-                                    <div class="barraHa" style="background: linear-gradient(to right, #5e8ed5 0% , #5e8ed5 50% , #a4bbde 50%, #a4bbde 100%);"></div>
-                                </li>    
-                                
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <div class="flexHabilidadesSelect">
-                    <ul class="principalUlHabi">
-                        <li>
-                            <div class="gridItemDesplegableHabi" onclick="abrirInfoBarra(3)">
-                                <img class="icoHab" src="assets/icon/robot.svg" alt="icono-brackets" width="30px" height="30px">
-                                <div>
-                                    <h3>Aptitudes</h3>
-                                    <p>Siempre</p>
-                                </div>
-                                <img class="icoHab icoArrow" src="assets/icon/arrow-down.svg" alt="icono-arrow-down/up" width="30px" height="30px">
-                            </div>
-                            
-                            <ul class="infoHabi">
-                                <li >
-                                    <div class="gridHabiBarra">
-                                        <span>Iniciativa</span>
-                                        <span class="flexHabiBarraSpan">85%</span>
-                                    </div>
-                                    <div class="barraHa" style="background: linear-gradient(to right, #5e8ed5 0% , #5e8ed5 85% , #a4bbde 85%, #a4bbde 100%);"></div>
-                                </li> 
-
-                                <li >
-                                    <div class="gridHabiBarra">
-                                        <span>Trabajo en equipo</span>
-                                        <span class="flexHabiBarraSpan">90%</span>
-                                    </div>
-                                    <div class="barraHa" style="background: linear-gradient(to right, #5e8ed5 0% , #5e8ed5 90% , #a4bbde 90%, #a4bbde 100%);"></div>
-                                </li>   
-                                
-                                <li >
-                                    <div class="gridHabiBarra">
-                                        <span>Resolución de problemas</span>
-                                        <span class="flexHabiBarraSpan">85%</span>
-                                    </div>
-                                    <div class="barraHa" style="background: linear-gradient(to right, #5e8ed5 0% , #5e8ed5 85% , #a4bbde 85%, #a4bbde 100%);"></div>
-                                </li> 
-                                
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-        </section>
-
-        <!-- Experiencia -->
-        <section class="containerExperiencia sectDim">
-            <h1>Experiencia</h1>
-            <div class="gridExpeEduWork">
-                <div class="flexExpeEduca">
-                    <a onclick="cambiarWorkEduca(0)"><img class="ajusteIcoEx" src="assets/icon/graduation-cap.svg" alt="icono-birrete" width="20px" height="20px">Educación</a>
-                </div>
+            </header>
+    
+            <!-- Presentación -->
+            <section class="containerPresentacion sectDim">
                 <div>
-                    <a onclick="cambiarWorkEduca(1)"><img class="ajusteIcoEx" img src="assets/icon/bag.svg" alt="icono-maletin" width="20px" height="20px">Trabajo</a>
-                </div>
-            </div>
-
-            <div class="linea-tiempo">
-                <!-- Work -->
-                <div class="momento expWork">
-                    <h3>Desarrollador Full Stack</h3>
-                    <p class="descripcion">Gave International - Madrid</p>
-                    <span><img src="assets/icon/calendario.svg" alt="icono-calendario" width="13px" height="13px">2022</span>
-                </div>
-                <div class="momento expWork">
-                    <h3>Ayudante de cocina</h3>
-                    <p class="descripcion">La Mordida - Madrid</p>
-                    <span><img src="assets/icon/calendario.svg" alt="icono-calendario" width="13px" height="13px">2021 - 2022</span>
-                </div>
-                <div class="momento expWork">
-                    <h3>Ayudante de cocina</h3>
-                    <p class="descripcion">TGB - Madrid</p>
-                    <span><img src="assets/icon/calendario.svg" alt="icono-calendario" width="13px" height="13px">2017 - 2020</span>
-                </div>
-
-
-                <!-- Education -->
-                <div class="momento expEdu">
-                    <h3>Grado Superior - Desarrollo de Aplicaciones Web</h3>
-                    <p class="descripcion">IFP - Madrid</p>
-                    <span><img src="assets/icon/calendario.svg" alt="icono-calendario" width="13px" height="13px">2020 - 2022</span>
-                </div>
-                <div class="momento expEdu">
-                    <h3>Git y GitHub</h3>
-                    <p class="descripcion">Udemy - Online</p>
-                    <span><img src="assets/icon/calendario.svg" alt="icono-calendario" width="13px" height="13px">2022</span>
-                </div>
-                <div class="momento expEdu">
-                    <h3>Bachillerato</h3>
-                    <p class="descripcion">Calderón de la Barca - Madrid</p>
-                    <span><img src="assets/icon/calendario.svg" alt="icono-calendario" width="13px" height="13px">2013 - 2015</span>
-                </div>
-            </div>
-        </section>
-
-        <!-- Proyectos -->
-        <section class="containerProyectos sectDim2">
-            <h1>Proyectos</h1>
-           <div class="gridProyectos">
-                <div class="flexArrowProyec fapL"><img src="assets/icon/arrow-carrusel-left.svg" alt="arrow-carrusel-left" height="80px" width="80px" onclick="arrowCarruLeft()"></div>
-
-                <div class="gridProyectos2">
-                    <div class="flexImgProye"><img src="assets/img/setup-ex1.jpg" height="220px" width="350px"></div>
-                    <div>
-                        <h3>Título del Proyecto</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id distinctio, omnis error modi obcaecati atque suscipit, quas, veniam 
-                        </p>
-                        <button class="btnProyectos">Explorar</button>
-                    </div>
-                </div>
-
-                <div class="gridProyectos2" style="display: none;">
-                    <div class="flexImgProye"><img src="assets/img/setup-ex2.jpeg" height="220px" width="350px"></div>
-                    <div>
-                        <h3>Título del Proyecto 2</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id distinctio, omnis error modi obcaecati atque suscipit, quas, veniam 
-                        </p>
-                        <button class="btnProyectos">Explorar</button>
-                    </div>
-                </div>
-
-                <div class="gridProyectos2" style="display: none;">
-                    <div class="flexImgProye"><img src="assets/img/setup-ex1.jpg" height="220px" width="350px"></div>
-                    <div>
-                        <h3>Título del Proyecto 3</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id distinctio, omnis error modi obcaecati atque suscipit, quas, veniam 
-                        </p>
-                        <button class="btnProyectos">Explorar</button>
-                    </div>
-                </div>
-
-                <div class="flexArrowProyec  fapR"><img src="assets/icon/arrow-carrusel-right.svg" alt="arrow-carrusel-right"  height="80px" width="80px" onclick="arrowCarruRight()"></div>
-           </div> 
-
-           <div class="flexCirculosProy">
-                <span class="circuCarruPro" style="background-color: #5e8ed5;" onclick="btnCircuPro(0)"></span>
-                <span class="circuCarruPro" onclick="btnCircuPro(1)"></span>
-                <span class="circuCarruPro" onclick="btnCircuPro(2)"></span>
-           </div>
-        </section>
-
-        <!-- Conctactar -->
-        <section class="containerConctactar sectDim">
-            <h1>Contactame</h1>
-            <div class="gridFormCon">
-                <div class="ajusteResForm">
-                    <div class="gridIconTexCon">
-                        <div class="flexTflCon"><img src="assets/icon/phone.svg" alt="icon-phone" width="30px" height="30px"></div>
-                        <div>
-                            <h2>Llamar</h2>
-                            <span>+34 678 167 750</span>
+                    <div class="flexPresentacionTxt">
+                        <h1 class="marginAjus">Hola, Soy Wilson</h1>
+                        <h3 class="marginAjus">Desarrollador Web</h3>
+                        <p class="marginAjus">Recién graduado en Desarrollo de Aplicaciones Web, con exelentes actitudes en el área de la programación</p>
+                        <button class="btnPresentacionConct">
+                            Contactar
+                            <img src="assets/icon/navigator.svg" alt="icono-navigator" width="15px" height="15px">
+                        </button>
+                        <div class="iconosLinkGit">
+                            <a href="http://www.linkedin.com/in/wilson-brito"><img src="assets/icon/linkedinBlue.svg" alt="icono-linkedin" width="20px" height="20px"></a>
+                            <a href="http://www.github.com/wilBrito"><img src="assets/icon/githubBlue.svg" alt="icono-linkedin" width="20px" height="20px"></a>
                         </div>
                     </div>
-
-                    <div class="gridIconTexCon">
-                        <div class="flexTflCon"><img src="assets/icon/email-cont.svg" alt="icon-phone" width="30px" height="30px"></div>
-                        <div>
-                            <h2>Email</h2>
-                            <span>wil.brito@icloud.com</span>
-                        </div>
-                    </div>
-
-                    <div class="gridIconTexCon">
-                        <div class="flexTflCon"><img src="assets/icon/location.svg" alt="icon-phone" width="30px" height="30px"></div>
-                        <div>
-                            <h2>Localización</h2>
-                            <span>España - Madrid</span>
-                        </div>
-                    </div>
-
                 </div>
-
-                <form>
+                <div class="itemPresentacionResponsive">
+                    <div class="flexPresentacionImg oval">
+                        <img src="assets/img/perfil-bob.webp" width="200px" height="200px">
+                    </div>
+                </div>
+            </section>
+    
+            <!-- Descripción -->
+            <section class="containerDescripcion sectDim">
+                <h1>Sobre Mi</h1>
+                <div class="gridDescripcion">
+                    <div>
+                        <div class="flexDescripcionImg">
+                            <img src="assets/img/perfil-bob.webp" width="280px" height="200px">
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <p>
+                                Desarrollador Web, recién graduado con experiencia en la realización
+                                de aplicaciones web principalmente en Java con Spring y con la ayuda de HTML, CSS y JavaScript empleando Mysql como bbdd Mysql.
+                            </p>
+                            <div class="gridTimeDescrip">
+                                <div class="flexTimeDescrip">
+                                    <span>1+</span>
+                                    <p>Años de experiencia</p>
+                                </div>
+                                <div class="flexTimeDescrip">
+                                    <span>5+</span>
+                                    <p>Proyectos Completados</p>
+                                </div>
+                                <div class="flexTimeDescrip">
+                                    <span>1</span>
+                                    <p>Experiencia en Empresa</p>
+                                </div>
+                            </div>
+                            <div class="gridBtnDescrip">
+                                <a href="assets/pdf/Brito Yari, Wilson-Cv.pdf" download=""><button class="btnDescripcionCVCP">
+                                    Descargar CV
+                                    <img src="assets/icon/download.svg" alt="icono-download" width="15px" height="15px">
+                                </button></a>
+                                <a href="assets/pdf/Brito Yari, Wilson-CartaP.pdf" download=""><button class="btnDescripcionCVCP">
+                                    Descargar CP
+                                    <img src="assets/icon/download.svg" alt="icono-download" width="15px" height="15px">
+                                </button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <!-- Habilidades -->
+            <section class="containerHabilidades sectDim">
+                <h1>Habilidades</h1>
+                <div class="gridHabilidades">
+                    <div class="flexHabilidadesSelect">
+                        <ul class="principalUlHabi">
+                            <li>
+                                <div class="gridItemDesplegableHabi" onclick="abrirInfoBarra(0)">
+                                    <img class="icoHab" src="assets/icon/database.svg" alt="icono-database" width="30px" height="30px">
+                                    <div>
+                                        <h3>Desarrollador BackEnd</h3>
+                                        <p>Más de 2 años</p>
+                                    </div>
+                                    <img class="icoHab icoArrow" src="assets/icon/arrow-down.svg" alt="icono-arrow-down/up" width="30px" height="30px">
+                                </div>
+                                
+                                <ul class="infoHabi">
+                                    <li >
+                                        <div class="gridHabiBarra">
+                                            <span>Java</span>
+                                            <span class="flexHabiBarraSpan">85%</span>
+                                        </div>
+                                        <div class="barraHa" style="background: linear-gradient(to right, #5e8ed5 0% , #5e8ed5 85% , #a4bbde 85%, #a4bbde 100%);"></div>
+                                    </li>
+    
+                                    <li >
+                                        <div class="gridHabiBarra">
+                                            <span>Framework Spring Boot</span>
+                                            <span class="flexHabiBarraSpan">70%</span>
+                                        </div>
+                                        <div class="barraHa" style="background: linear-gradient(to right, #5e8ed5 0% , #5e8ed5 70% , #a4bbde 70%, #a4bbde 100%);"></div>
+                                    </li>   
+                                    
+                                    <li >
+                                        <div class="gridHabiBarra">
+                                            <span>MySql</span>
+                                            <span class="flexHabiBarraSpan">80%</span>
+                                        </div>
+                                        <div class="barraHa" style="background: linear-gradient(to right, #5e8ed5 0% , #5e8ed5 80% , #a4bbde 80%, #a4bbde 100%);"></div>
+                                    </li>
+    
+                                    <li >
+                                        <div class="gridHabiBarra">
+                                            <span>PHP</span>
+                                            <span class="flexHabiBarraSpan">20%</span>
+                                        </div>
+                                        <div class="barraHa" style="background: linear-gradient(to right, #5e8ed5 0% , #5e8ed5 20% , #a4bbde 20%, #a4bbde 100%);"></div>
+                                    </li>
+                                </ul>
+                                
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="flexHabilidadesSelect">
+                        <ul class="principalUlHabi">
+                            <li>
+                                <div class="gridItemDesplegableHabi" onclick="abrirInfoBarra(1)">
+                                    <img class="icoHab" src="assets/icon/brackets.svg" alt="icono-brackets" width="30px" height="30px">
+                                    <div>
+                                        <h3>Desarrollador FrontEnd</h3>
+                                        <p>Más de 2 años</p>
+                                    </div>
+                                    <img class="icoHab icoArrow" src="assets/icon/arrow-down.svg" alt="icono-arrow-down/up" width="30px" height="30px">
+                                </div>
+                                
+                                <ul class="infoHabi">
+                                    <li >
+                                        <div class="gridHabiBarra">
+                                            <span>HTML</span>
+                                            <span class="flexHabiBarraSpan">85%</span>
+                                        </div>
+                                        <div class="barraHa" style="background: linear-gradient(to right, #5e8ed5 0% , #5e8ed5 85% , #a4bbde 85%, #a4bbde 100%);"></div>
+                                    </li>
+    
+                                    <li >
+                                        <div class="gridHabiBarra">
+                                            <span>CSS</span>
+                                            <span class="flexHabiBarraSpan">65%</span>
+                                        </div>
+                                        <div class="barraHa" style="background: linear-gradient(to right, #5e8ed5 0% , #5e8ed5 65% , #a4bbde 65%, #a4bbde 100%);"></div>
+                                    </li>      
+                                    
+                                    <li >
+                                        <div class="gridHabiBarra">
+                                            <span>JavaScript</span>
+                                            <span class="flexHabiBarraSpan">75%</span>
+                                        </div>
+                                        <div class="barraHa" style="background: linear-gradient(to right, #5e8ed5 0% , #5e8ed5 75% , #a4bbde 75%, #a4bbde 100%);"></div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="flexHabilidadesSelect">
+                        <ul class="principalUlHabi">
+                            <li>
+                                <div class="gridItemDesplegableHabi" onclick="abrirInfoBarra(2)">
+                                    <img class="icoHab" src="assets/icon/code-branch.svg" alt="icono-brackets" width="30px" height="30px">
+                                    <div>
+                                        <h3>Control de Versiones</h3>
+                                        <p>Menos de 1 Año</p>
+                                    </div>
+                                    <img class="icoHab icoArrow" src="assets/icon/arrow-down.svg" alt="icono-arrow-down/up" width="30px" height="30px">
+                                </div>
+                                
+                                <ul class="infoHabi">
+                                    <li >
+                                        <div class="gridHabiBarra">
+                                            <span>GitHub</span>
+                                            <span class="flexHabiBarraSpan">60%</span>
+                                        </div>
+                                        <div class="barraHa" style="background: linear-gradient(to right, #5e8ed5 0% , #5e8ed5 60% , #a4bbde 60%, #a4bbde 100%);"></div>
+                                    </li> 
+    
+                                    <li >
+                                        <div class="gridHabiBarra">
+                                            <span>Git</span>
+                                            <span class="flexHabiBarraSpan">50%</span>
+                                        </div>
+                                        <div class="barraHa" style="background: linear-gradient(to right, #5e8ed5 0% , #5e8ed5 50% , #a4bbde 50%, #a4bbde 100%);"></div>
+                                    </li>    
+                                    
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="flexHabilidadesSelect">
+                        <ul class="principalUlHabi">
+                            <li>
+                                <div class="gridItemDesplegableHabi" onclick="abrirInfoBarra(3)">
+                                    <img class="icoHab" src="assets/icon/robot.svg" alt="icono-brackets" width="30px" height="30px">
+                                    <div>
+                                        <h3>Aptitudes</h3>
+                                        <p>Siempre</p>
+                                    </div>
+                                    <img class="icoHab icoArrow" src="assets/icon/arrow-down.svg" alt="icono-arrow-down/up" width="30px" height="30px">
+                                </div>
+                                
+                                <ul class="infoHabi">
+                                    <li >
+                                        <div class="gridHabiBarra">
+                                            <span>Iniciativa</span>
+                                            <span class="flexHabiBarraSpan">85%</span>
+                                        </div>
+                                        <div class="barraHa" style="background: linear-gradient(to right, #5e8ed5 0% , #5e8ed5 85% , #a4bbde 85%, #a4bbde 100%);"></div>
+                                    </li> 
+    
+                                    <li >
+                                        <div class="gridHabiBarra">
+                                            <span>Trabajo en equipo</span>
+                                            <span class="flexHabiBarraSpan">90%</span>
+                                        </div>
+                                        <div class="barraHa" style="background: linear-gradient(to right, #5e8ed5 0% , #5e8ed5 90% , #a4bbde 90%, #a4bbde 100%);"></div>
+                                    </li>   
+                                    
+                                    <li >
+                                        <div class="gridHabiBarra">
+                                            <span>Resolución de problemas</span>
+                                            <span class="flexHabiBarraSpan">85%</span>
+                                        </div>
+                                        <div class="barraHa" style="background: linear-gradient(to right, #5e8ed5 0% , #5e8ed5 85% , #a4bbde 85%, #a4bbde 100%);"></div>
+                                    </li> 
+                                    
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+            </section>
+    
+            <!-- Experiencia -->
+            <section class="containerExperiencia sectDim">
+                <h1>Experiencia</h1>
+                <div class="gridExpeEduWork">
+                    <div class="flexExpeEduca">
+                        <a onclick="cambiarWorkEduca(0)"><img class="ajusteIcoEx" src="assets/icon/graduation-cap.svg" alt="icono-birrete" width="20px" height="20px">Educación</a>
+                    </div>
+                    <div>
+                        <a onclick="cambiarWorkEduca(1)"><img class="ajusteIcoEx" img src="assets/icon/bag.svg" alt="icono-maletin" width="20px" height="20px">Trabajo</a>
+                    </div>
+                </div>
+    
+                <div class="linea-tiempo">
+                    <!-- Work -->
+                    <div class="momento expWork">
+                        <h3>Desarrollador Full Stack</h3>
+                        <p class="descripcion">Gave International - Madrid</p>
+                        <span><img src="assets/icon/calendario.svg" alt="icono-calendario" width="13px" height="13px">2022</span>
+                    </div>
+                    <div class="momento expWork">
+                        <h3>Ayudante de cocina</h3>
+                        <p class="descripcion">La Mordida - Madrid</p>
+                        <span><img src="assets/icon/calendario.svg" alt="icono-calendario" width="13px" height="13px">2021 - 2022</span>
+                    </div>
+                    <div class="momento expWork">
+                        <h3>Ayudante de cocina</h3>
+                        <p class="descripcion">TGB - Madrid</p>
+                        <span><img src="assets/icon/calendario.svg" alt="icono-calendario" width="13px" height="13px">2017 - 2020</span>
+                    </div>
+    
+    
+                    <!-- Education -->
+                    <div class="momento expEdu">
+                        <h3>Grado Superior - Desarrollo de Aplicaciones Web</h3>
+                        <p class="descripcion">IFP - Madrid</p>
+                        <span><img src="assets/icon/calendario.svg" alt="icono-calendario" width="13px" height="13px">2020 - 2022</span>
+                    </div>
+                    <div class="momento expEdu">
+                        <h3>Git y GitHub</h3>
+                        <p class="descripcion">Udemy - Online</p>
+                        <span><img src="assets/icon/calendario.svg" alt="icono-calendario" width="13px" height="13px">2022</span>
+                    </div>
+                    <div class="momento expEdu">
+                        <h3>Bachillerato</h3>
+                        <p class="descripcion">Calderón de la Barca - Madrid</p>
+                        <span><img src="assets/icon/calendario.svg" alt="icono-calendario" width="13px" height="13px">2013 - 2015</span>
+                    </div>
+                </div>
+            </section>
+    
+            <!-- Proyectos -->
+            <section class="containerProyectos sectDim2">
+                <h1>Proyectos</h1>
+               <div class="gridProyectos">
+                    <div class="flexArrowProyec fapL"><img src="assets/icon/arrow-carrusel-left.svg" alt="arrow-carrusel-left" height="80px" width="80px" onclick="arrowCarruLeft()"></div>
+    
+                    <div class="gridProyectos2">
+                        <div class="flexImgProye"><img src="assets/img/setup-ex1.jpg" height="220px" width="350px"></div>
+                        <div>
+                            <h3>Título del Proyecto</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id distinctio, omnis error modi obcaecati atque suscipit, quas, veniam 
+                            </p>
+                            <button class="btnProyectos">Explorar</button>
+                        </div>
+                    </div>
+    
+                    <div class="gridProyectos2" style="display: none;">
+                        <div class="flexImgProye"><img src="assets/img/setup-ex2.jpeg" height="220px" width="350px"></div>
+                        <div>
+                            <h3>Título del Proyecto 2</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id distinctio, omnis error modi obcaecati atque suscipit, quas, veniam 
+                            </p>
+                            <button class="btnProyectos">Explorar</button>
+                        </div>
+                    </div>
+    
+                    <div class="gridProyectos2" style="display: none;">
+                        <div class="flexImgProye"><img src="assets/img/setup-ex1.jpg" height="220px" width="350px"></div>
+                        <div>
+                            <h3>Título del Proyecto 3</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id distinctio, omnis error modi obcaecati atque suscipit, quas, veniam 
+                            </p>
+                            <button class="btnProyectos">Explorar</button>
+                        </div>
+                    </div>
+    
+                    <div class="flexArrowProyec  fapR"><img src="assets/icon/arrow-carrusel-right.svg" alt="arrow-carrusel-right"  height="80px" width="80px" onclick="arrowCarruRight()"></div>
+               </div> 
+    
+               <div class="flexCirculosProy">
+                    <span class="circuCarruPro" style="background-color: #5e8ed5;" onclick="btnCircuPro(0)"></span>
+                    <span class="circuCarruPro" onclick="btnCircuPro(1)"></span>
+                    <span class="circuCarruPro" onclick="btnCircuPro(2)"></span>
+               </div>
+            </section>
+    
+            <!-- Conctactar -->
+            <section class="containerConctactar sectDim">
+                <h1>Contactame</h1>
+                <div class="gridFormCon">
+                    <div class="ajusteResForm">
+                        <div class="gridIconTexCon">
+                            <div class="flexTflCon"><img src="assets/icon/phone.svg" alt="icon-phone" width="30px" height="30px"></div>
+                            <div>
+                                <h2>Llamar</h2>
+                                <span>+34 678 167 750</span>
+                            </div>
+                        </div>
+    
+                        <div class="gridIconTexCon">
+                            <div class="flexTflCon"><img src="assets/icon/email-cont.svg" alt="icon-phone" width="30px" height="30px"></div>
+                            <div>
+                                <h2>Email</h2>
+                                <span>wil.brito@icloud.com</span>
+                            </div>
+                        </div>
+    
+                        <div class="gridIconTexCon">
+                            <div class="flexTflCon"><img src="assets/icon/location.svg" alt="icon-phone" width="30px" height="30px"></div>
+                            <div>
+                                <h2>Localización</h2>
+                                <span>España - Madrid</span>
+                            </div>
+                        </div>
+    
+                    </div>
+    
+                    <form>
+                        
+                        <div class="gridFormCont">
+                            <div class="inputContainer">
+                                <input placeholder="Nombre">
+                                <label>Nombre</label>
+                            </div>
+         
+                            <div class="inputContainer">
+                                <input placeholder="Email">
+                                <label>Email</label>
+                            </div>
+    
+                        </div> 
+         
+                        <div class="inputContainer">
+                            <input placeholder="Proyectos">
+                            <label>Proyecto</label>
+                        </div>
+                             
+                        <div class="inputContainer">
+                            <input type="text" class="ajusFormTa" placeholder="Mensajes">
+                            <label class="ajusFormPosi">Mensaje</label>
+                        </div>  
+         
+                        <button class="btnContac">
+                            Enviar
+                            <img src="assets/icon/navigator.svg" alt="icono-navigator" width="15px" height="15px">
+                        </button>
+                    </form>
                     
-                    <div class="gridFormCont">
-                        <div class="inputContainer">
-                            <input placeholder="Nombre">
-                            <label>Nombre</label>
-                        </div>
-     
-                        <div class="inputContainer">
-                            <input placeholder="Email">
-                            <label>Email</label>
-                        </div>
+                </div>
+            </section>
+        </article>
 
-                    </div> 
-     
-                    <div class="inputContainer">
-                        <input placeholder="Proyectos">
-                        <label>Proyecto</label>
-                    </div>
-                         
-                    <div class="inputContainer">
-                        <input type="text" class="ajusFormTa" placeholder="Mensajes">
-                        <label class="ajusFormPosi">Mensaje</label>
-                    </div>  
-     
-                    <button class="btnContac">
-                        Enviar
-                        <img src="assets/icon/navigator.svg" alt="icono-navigator" width="15px" height="15px">
-                    </button>
-                </form>
-                
-            </div>
-        </section>
 
         <!-- Footer -->
         <footer>

@@ -2,13 +2,11 @@
 html,body{
     margin: 0;
 }
-body section{
+article{
     margin: 0 12% 0 12%;
 }
 
-body header{
-    margin: 0 12% 0 12%;
-}
+
 
 
 
@@ -783,7 +781,7 @@ input:focus + label {
 
 
 @media screen and (max-width: 460px) {
-    body header{
+    article{
         margin: 0 8% 0 8%;
     }
 
