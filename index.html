@@ -23,12 +23,12 @@
                 <div>
                     <nav class="topnav" id="myTopnav">
                         <ul id="eleDadAux">
-                            <li><a class="auxLightDark" href="#">Inicio</a></li>
-                            <li><a class="auxLightDark" href="#">Sobre mi</a></li>
-                            <li><a class="auxLightDark" href="#">Habilidades</a></li>
-                            <li><a class="auxLightDark" href="#">Experiencia</a></li>
-                            <li><a class="auxLightDark" href="#">Proyectos</a></li>
-                            <li><a class="auxLightDark" href="#">Contactame</a></li>
+                            <li><a class="auxLightDark" href="index.html">Inicio</a></li>
+                            <li><a class="auxLightDark" href="#sobreMi">Sobre mi</a></li>
+                            <li><a class="auxLightDark" href="#habilidades">Habilidades</a></li>
+                            <li><a class="auxLightDark" href="#experiencia">Experiencia</a></li>
+                            <li><a class="auxLightDark" href="#proyectos">Proyectos</a></li>
+                            <li><a class="auxLightDark" href="#contactame">Contactame</a></li>
                             <li class="liBtnAux liMonSun"><img class="posiNavMoonSun sunMoon" src="assets/icon/moon.svg" height="20px" width="20px" onclick="darkLightStyle()"></li>
                             <li class="liBtnAux liBurger"><img class="posiNavMoonSun burger" src="assets/icon/bars.svg" height="20px" width="20px" onclick="myFunction(); navResponsiveFix()"></li>
                         </ul>
@@ -55,18 +55,18 @@
                 </div>
                 <div class="itemPresentacionResponsive">
                     <div class="flexPresentacionImg oval">
-                        <img src="assets/img/perfil-bob.webp" width="200px" height="200px">
+                        <img src="assets/img/img-perfil-porfolio.jpg" width="200px" height="200px" style="border-radius: 50%;">
                     </div>
                 </div>
             </section>
     
             <!-- Descripción -->
             <section class="containerDescripcion sectDim">
-                <h1>Sobre Mi</h1>
+                <h1 name="sobreMi" id="sobreMi">Sobre Mi</h1>
                 <div class="gridDescripcion">
                     <div>
                         <div class="flexDescripcionImg">
-                            <img src="assets/img/perfil-bob.webp" width="280px" height="200px">
+                            <img src="assets/img/foto-section-porfolio.jpg" width="280px" height="200px">
                         </div>
                     </div>
                     <div>
@@ -106,7 +106,7 @@
     
             <!-- Habilidades -->
             <section class="containerHabilidades sectDim">
-                <h1>Habilidades</h1>
+                <h1 name="habilidades" id="habilidades">Habilidades</h1>
                 <div class="gridHabilidades">
                     <div class="flexHabilidadesSelect">
                         <ul class="principalUlHabi">
@@ -275,7 +275,7 @@
     
             <!-- Experiencia -->
             <section class="containerExperiencia sectDim">
-                <h1>Experiencia</h1>
+                <h1 name="experiencia" id="experiencia">Experiencia</h1>
                 <div class="gridExpeEduWork">
                     <div class="flexExpeEduca">
                         <a onclick="cambiarWorkEduca(0)"><img class="ajusteIcoEx" src="assets/icon/graduation-cap.svg" alt="icono-birrete" width="20px" height="20px">Educación</a>
@@ -325,7 +325,7 @@
     
             <!-- Proyectos -->
             <section class="containerProyectos sectDim2">
-                <h1>Proyectos</h1>
+                <h1 name="proyectos" id="proyectos">Proyectos</h1>
                <div class="gridProyectos">
                     <div class="flexArrowProyec fapL"><img src="assets/icon/arrow-carrusel-left.svg" alt="arrow-carrusel-left" height="80px" width="80px" onclick="arrowCarruLeft()"></div>
     
@@ -371,7 +371,7 @@
     
             <!-- Conctactar -->
             <section class="containerConctactar sectDim">
-                <h1>Contactame</h1>
+                <h1 name="contactame" id="contactame">Contactame</h1>
                 <div class="gridFormCon">
                     <div class="ajusteResForm">
                         <div class="gridIconTexCon">
